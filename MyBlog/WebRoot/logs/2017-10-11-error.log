@@ -1,0 +1,63 @@
+。。。错误原因：关闭的连接
+...错误场景：在oracledal包中SQLHelper类中的ExcuteScalar(String,String[])方法		2017-10-11 17:45:52
+。。。错误原因：关闭的连接
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 17:45:52
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 17:47:27
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 17:48:32
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 17:48:43
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 17:52:40
+//对数据集进行操作的时候需要将结果集的数据类型改变成------TYPE_scoll_instrants
+。。。错误原因：对只转发结果集的无效操作: first
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 18:02:42
+。。。错误原因：对只转发结果集的无效操作: first
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 18:10:21
+。。。错误原因：对只转发结果集的无效操作: first
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 18:11:15
+。。。错误原因：关闭的连接
+...错误场景：在oracledal包中SQLHelper类中的ExcuteScalar(String,String[])方法		2017-10-11 18:27:42
+。。。错误原因：关闭的连接
+...错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法		2017-10-11 18:27:42
+错误原因：ORA-00904: "ARTIST": 标识符无效
+
+错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法
+SQL代码：SELECT * FROM ARTICLE WHERE ARTIST=?
+参数：1,		2017-10-11 21:09:27
+错误原因：关闭的 Resultset
+错误场景：在oracledal包中ArticleOperator类中的getArticle(INT)方法		2017-10-11 21:10:51
+错误原因：关闭的 Resultset
+错误场景：在oracledal包中ArticleOperator类中的getArticle(INT)方法		2017-10-11 21:15:39
+错误原因：关闭的 Resultset
+错误场景：在oracledal包中ArticleOperator类中的getArticle(INT)方法		2017-10-11 21:20:49
+错误原因：列名无效
+错误场景：在oracledal包中ArticleOperator类中的getArticle(INT)方法		2017-10-11 21:37:35
+错误原因：光标位置无效
+错误场景：在oracledal包中ArticleOperator类中的getArticle(INT)方法		2017-10-11 21:40:03
+错误原因：ORA-01810: 格式代码出现两次
+
+错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法
+SQL代码：INSERT INTO ARTICLE(TITLE,CONTENT,DATA,TYPE,COUNT,IMAGEURL,DEL) VALUES(?,?,TO_DATE(?,'yyyy-MM-dd HH:mm:ss'),?,?,?,?)
+参数：我的第一篇测试博客,谁是谁的谁,2017-10-11 22:14:34,算法,0,testurl,0,		2017-10-11 22:14:35
+错误原因：ORA-01810: 格式代码出现两次
+
+错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法
+SQL代码：INSERT INTO ARTICLE(TITLE,CONTENT,DATA,TYPE,COUNT,IMAGEURL,DEL) VALUES(?,?,TO_DATE(?,'yyyy-MM-dd HH:mm:ss'),?,?,?,?)
+参数：我的第一篇测试博客,谁是谁的谁,2017-10-11 22:15:50,算法,0,testurl,0,		2017-10-11 22:15:51
+错误原因：ORA-01810: 格式代码出现两次
+
+错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法
+SQL代码：INSERT INTO ARTICLE(TITLE,CONTENT,DATA,TYPE,COUNT,IMAGEURL,DEL) VALUES(?,?,TO_DATE(?,'yyyy-MM-dd HH:mm:ss'),?,?,?,?)
+参数：我的第一篇测试博客,谁是谁的谁,2017-10-11 22:15:53,算法,0,testurl,0,		2017-10-11 22:15:54
+错误原因：ORA-01810: 格式代码出现两次
+
+错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法
+SQL代码：INSERT INTO ARTICLE(TITLE,CONTENT,DATA,TYPE,COUNT,IMAGEURL,DEL) VALUES(?,?,TO_DATE(?,'yyyy-MM-dd HH:mm:ss'),?,?,?,?)
+参数：我的第一篇测试博客,谁是谁的谁,2017-10-11 22:16:09,算法,0,testurl,0,		2017-10-11 22:16:09
+错误原因：ORA-01810: 格式代码出现两次
+
+错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法
+SQL代码：INSERT INTO ARTICLE(TITLE,CONTENT,DATA,TYPE,COUNT,IMAGEURL,DEL) VALUES(?,?,TO_DATE(?,'yyyy-MM-dd hh24:mm:ss'),?,?,?,?)
+参数：我的第一篇测试博客,谁是谁的谁,2017-10-11 22:42:23,算法,0,testurl,0,		2017-10-11 22:42:24

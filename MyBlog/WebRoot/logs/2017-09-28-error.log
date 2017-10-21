@@ -1,0 +1,24 @@
+。。。错误原因：null
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 20:03:01
+。。。错误原因：调用中的无效参数
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 20:43:50
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 20:59:51
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:11:15
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 1
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:12:42
+。。。错误原因：索引中丢失  IN 或 OUT 参数:: 2
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:14:20
+。。。错误原因：ORA-01747: user.table.column, table.column 或列说明无效
+
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:15:13
+。。。错误原因：ORA-00911: 无效字符
+
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:33:55
+。。。错误原因：ORA-01747: user.table.column, table.column 或列说明无效
+
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:34:28
+。。。错误原因：ORA-00911: 无效字符
+
+...错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法		2017-09-28 21:39:58

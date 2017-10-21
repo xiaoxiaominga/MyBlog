@@ -1,0 +1,4 @@
+。。。错误原因：无效的列索引
+...错误场景：在oracledal包中SQLHelper类中的ExcuteScalar(String,String[])方法		2017-10-09 19:26:55
+。。。错误原因：无效的列索引
+...错误场景：在oracledal包中SQLHelper类中的ExcuteScalar(String,String[])方法		2017-10-09 19:31:56
