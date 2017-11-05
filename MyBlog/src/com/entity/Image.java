@@ -1,6 +1,6 @@
 package com.entity;
 
-public class Image {
+public class Image extends Entity {
     private int imageid;
     private String specification;
     private String type;

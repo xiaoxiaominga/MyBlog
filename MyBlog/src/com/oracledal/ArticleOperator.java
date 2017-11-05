@@ -1,9 +1,13 @@
 package com.oracledal;
+import java.io.BufferedReader;
+import java.io.Reader;
+import java.sql.Clob;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.entity.Article;
+import com.entity.Entity;
 import com.idal.IArticle;
 import com.oracledal.SQLHelper;
 import com.utility.Log;
@@ -63,7 +67,7 @@ public class ArticleOperator implements IArticle {
 			ResultSet set=SQLHelper.ExecuteResultSet(SELECT_ALL_ARTICLE, null);
 			while(set.next())
 			{
-				Article article=new Article(set.getInt("ARTISTED"),set.getString("TITLE"),set.getString("CONTENT"),set.getString("DATA"),
+				Article article=new Article(set.getInt("ARTISTID"),set.getString("TITLE"),getClobString(set.getClob("CONTENT")).toString(),set.getString("DATA"),
 	    		set.getString("TYPE"),
 	    		set.getInt("COUNT"),set.getString("IMAGEURL"),set.getInt("del"));
 				list.add(article);
@@ -71,12 +75,32 @@ public class ArticleOperator implements IArticle {
 			return list;
 		}catch (Exception e) {
 			// TODO: handle exception
-			Log.writeToError("错误原因："+e.getMessage().toString()+"\r\n错误场景：在oracledal包中ArticleOperator类中的getArticles()方法");
+			e.printStackTrace();
+			//Log.writeToError("错误原因："+e.getMessage().toString()+"\r\n错误场景：在oracledal包中ArticleOperator类中的getArticles()方法");
 		return list;
 		}
 		
 	}
-    
+    private String getClobString(Clob clob)
+    {
+    	String relString="";
+    	try{
+    		Reader is=clob.getCharacterStream();//获取字符流
+    		BufferedReader br=new BufferedReader(is);
+    		StringBuffer sbBuffer=new StringBuffer();
+    		String string=br.readLine();
+    		while(string!=null)
+    		{
+    			sbBuffer.append(string);
+    			string=br.readLine();
+    		}
+    		relString=sbBuffer.toString();
+    	}catch (Exception e) {
+			// TODO: handle exception
+    		relString=e.getMessage();
+		}
+    	return relString;
+    }
 	/* (non-Javadoc)
 	 * @see com.idal.IArticle#getRecommendArticles()
 	 * 获取最新的文章列表

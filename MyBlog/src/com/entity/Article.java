@@ -6,7 +6,7 @@ import java.sql.Date;
  * @author 马腾飞
  *用户发表的文章表 的实体类
  */
-public class Article {
+public class Article extends Entity {
     private int articleid;
     private String title;
     //文章内容。
@@ -20,12 +20,12 @@ public class Article {
     public Article(String title, String content, String date,
 			String type, int count, String imageurl, int del)
     {
-    	this.title = title;
-		this.content = content;
-		this.date = date;
-		this.type = type;
+    	this.title = title.trim();
+		this.content = content.trim();
+		this.date = date.trim();
+		this.type = type.trim();
 		this.count = count;
-		this.imageurl = imageurl;
+		this.imageurl = imageurl.trim();
 		this.del = del;
     }
     //构造方法1
@@ -33,12 +33,12 @@ public class Article {
 			String type, int count, String imageurl, int del) {
 		super();
 		this.articleid = articleid;
-		this.title = title;
-		this.content = content;
-		this.date = date;
-		this.type = type;
+		this.title = title.trim();
+		this.content = content.trim();
+		this.date = date.trim();
+		this.type = type.trim();
 		this.count = count;
-		this.imageurl = imageurl;
+		this.imageurl = imageurl.trim();
 		this.del = del;
 	}
 	public int getArticleid() {

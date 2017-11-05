@@ -37,19 +37,19 @@
   <li class="layui-nav-item"><a href="">社区</a></li>
 </ul>
 		</div>
-		 <form  id="uploadform">
+		 <form  id="uploadform" >
 		 <!-- edit start -->
 		<div id="editor" class="editDIV">
 
 			<div style="width:500px;height:150px;text-align: left;">
 		    <label class="layui-form-label">标题</label>
 			<div class="layui-input-block">
-				<input type="text" id="title" name="title" required lay-verify="required" class="layui-input"  id="a_title" placeholder="请输入文章的标题" />
+				<input type="text" id="title"  required lay-verify="required" class="layui-input"   placeholder="请输入文章的标题" />
 			</div>
 			<br />
 			<label class="layui-form-label">作者</label>
 			<div class="layui-input-block">
-				<input type="text" name="author" required lay-verify="required" class="layui-input"  id="a_title" placeholder="请输入文章的作者" />
+				<input type="text" id="author" required lay-verify="required" class="layui-input"   placeholder="请输入文章的作者" />
 			</div>
 			
 			<!--
@@ -61,7 +61,7 @@
 			<div class="layui-form-item">
     <label class="layui-form-label">类型</label>
     <div class="layui-input-block">
-      <select id="selectedType" name="articleType" lay-verify="required">
+      <select  id="articleType" lay-verify="required">
         <option value=""></option>
         <option value="0" selected="">日记</option> 
         <option value="1">技术</option>
@@ -83,7 +83,7 @@
 				<br />
 				<label class="layui-form-label">文章</label>
 				<div class="layui-input-block">
-					<textarea id="input" name="articleContent" style="display: none;"></textarea>
+					<textarea id="input"  style="display: none;"></textarea>
 					
 				</div>
 				
@@ -96,10 +96,10 @@
          
     <div class="layui-input-block">
    
-      <button class="layui-btn" id="submit"   lay-filter="formDemo">立即发布</button>
-      
-      <input type="file" class="layui-btn test" name="files"  />
-      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+     <!--  <button  id="submit"   >立即发布</button> -->
+      <input type="button" id="submit" value="立即发布"></input>
+      <input type="file" id="files"></input>
+      <button type="reset" id="reset" class="layui-btn layui-btn-primary">重置</button>
       
       
     </div>

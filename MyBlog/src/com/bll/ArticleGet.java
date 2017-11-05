@@ -1,8 +1,10 @@
 package com.bll;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.entity.*;
 import com.idal.*;
+import com.utility.JsonUtil;
 public class ArticleGet {
      /**
      * @param articleid 文章的id
@@ -22,16 +24,23 @@ public class ArticleGet {
     {
     	//创建IArtitcle的实例
     	IArticle iarticle=com.dal.Article.createIArticle();
-       return iarticle.insert(article);
+        return iarticle.insert(article);
     }
     /**
      * @return 返回所有的文章
      */
-    public List<Article> getAllArticles()
+    public String getAllArticles()
     {
     	//创建接口的实例
     	IArticle article=com.dal.Article.createIArticle();
-        return article.getArticles();
+    	List<Article> list=article.getArticles();
+        List<Entity> entity=new ArrayList<Entity>();
+    	for(Article article2:list)
+        {
+        	entity.add(article2);
+        }
+    	String sendString=JsonUtil.listToArray(entity);
+    	return sendString;
     }
     /**
      * @param type 要查找的文章type类型

@@ -62,6 +62,7 @@ public class SQLHelper {
 			}
 		}catch(Exception e)
 		{
+			e.printStackTrace();
 			Log.writeToError("错误原因："+e.getMessage().toString()+"\r\n错误场景：在oracledal包中SQLHelper类中的ExcuteResultSet(String,Object[])方法\r\n"+
 					"SQL代码："+sqlText+"\r\n"+"参数："+getParms(parms));
 			return null;
@@ -91,7 +92,7 @@ public class SQLHelper {
 		return count;
 		}catch(Exception e)
 		{
-			
+			e.printStackTrace();
 			Log.writeToError("错误原因："+e.getMessage().toString()+"\r\n错误场景：在oracledal包中SQLHelper类中的ExcuteNonQuery(String)方法\r\n"+
 			"SQL代码："+sqlText+"\r\n"+"参数："+getParms(parms));
 			return -1;
@@ -192,7 +193,7 @@ public class SQLHelper {
     	String parmString="";
     	for(int i=0;i<parms.length;i++)
     	{
-    		parmString+=parms[i]+",";
+    		parmString+=parms[i].toString()+",";
     	}
     	return parmString;
     }

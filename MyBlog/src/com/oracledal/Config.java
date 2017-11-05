@@ -35,7 +35,7 @@ public class Config {
         	  * 通过documentbuilder对象的parser方法加载xml文件到当前项目中
         	  * 注意得导入document对象时，需要导入org.w3c.dom.Document
         	  * */
-        	 Document document=documentBuilder.parse("WebRoot/WEB-INF/webconfig.xml");
+        	 Document document=documentBuilder.parse("webconfig.xml");
         	 //获取xml中的根节点集合
         	 NodeList connectionList=document.getElementsByTagName("connectionStrings");
         	 //可以通过nodelist的getLength()方法获得做外层节点的个数

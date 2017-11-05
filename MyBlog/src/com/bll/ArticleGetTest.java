@@ -4,11 +4,13 @@ import static org.junit.Assert.*;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 import org.junit.Test;
 
 import com.entity.Article;
-
+import com.entity.Entity;
+import com.utility.*;
 public class ArticleGetTest {
 
 	/**
@@ -32,6 +34,9 @@ public class ArticleGetTest {
     	boolean actual=articleGet.insertArticle(article);
     	assertEquals(expected, actual);
     }
+    /**
+     * @return 返回生成的当前系统时间
+     */
     private String getNowDate()
     {
     	String dateString="";
@@ -41,4 +46,14 @@ public class ArticleGetTest {
     	dateString=simpleDateFormat.format(date);
     	return dateString;
     }
+    @Test
+    public void testGetAllArticles()
+    {
+    	ArticleGet get=new ArticleGet();
+    	String actualString=get.getAllArticles();
+        
+         System.out.println(actualString);
+         assertEquals("", actualString);
+    }
+    
 }

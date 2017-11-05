@@ -4,7 +4,7 @@ package com.entity;
  * @author 马腾飞
  *评论表实体
  */
-public class Comment {
+public class Comment extends Entity {
     private int commentid;
     private int hostid;
     private String content;

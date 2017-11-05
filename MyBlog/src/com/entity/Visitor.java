@@ -6,7 +6,7 @@ import java.sql.Date;
  * @author 马腾飞
  *访问者信息
  */
-public class Visitor {
+public class Visitor extends Entity {
      private int visitorid;
      private String ip;
      private String hostname;
