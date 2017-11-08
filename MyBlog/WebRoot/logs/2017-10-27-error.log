@@ -1,0 +1,2 @@
+错误原因：列名无效
+错误场景：在oracledal包中ArticleOperator类中的getArticles()方法		2017-10-27 12:49:38
